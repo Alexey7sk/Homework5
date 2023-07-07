@@ -12,21 +12,21 @@ PrintArray(numbers);
 int count = 0;
 
 for (int i = 0; i < numbers.Length; i++)
-if (numbers[i] % 2 == 0)
-count++;
+    if (numbers[i] % 2 == 0)
+        count++;
 
 Console.WriteLine($"Общее количество чисел в массиве = {numbers.Length}, количество четных чисел в массиве = {count}");
 
 void FillArrayRandomNumbers(int[] numbers)
 {
-    for(int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < numbers.Length; i++)
     {
-        numbers[i] = new Random().Next(100,1000);
+        numbers[i] = new Random().Next(100, 1000);
     }
 }
 void PrintArray(int[] numbers)
 {
-    for(int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < numbers.Length; i++)
     {
         Console.Write(numbers[i] + " ");
     }
